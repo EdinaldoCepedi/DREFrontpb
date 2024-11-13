@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DRE - Demonstração do Resultado do Exercício</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>DRE - Demonstração do Resultado do Exercício</h1>
+
+    <form id="dreForm">
+      <label>Receita Operacional Bruta:</label>
+      <input type="number" id="receitaBruta" placeholder="Ex.: 100000" required>
+
+      <label>Deduções da Receita:</label>
+      <input type="number" id="deducoes" placeholder="Ex.: 5000" required>
+
+      <label>Custos Operacionais:</label>
+      <input type="number" id="custos" placeholder="Ex.: 30000" required>
+
+      <label>Despesas Operacionais:</label>
+      <input type="number" id="despesas" placeholder="Ex.: 10000" required>
+
+      <button type="button" onclick="calcularDRE()">Calcular DRE</button>
+    </form>
+
+    <div id="resultado" class="resultado">
+      <h2>Resultados</h2>
+      <p id="receitaLiquida"></p>
+      <p id="lucroBruto"></p>
+      <p id="lucroOperacional"></p>
+      <p id="lucroLiquido"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
